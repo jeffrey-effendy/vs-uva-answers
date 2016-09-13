@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10055.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Boilerplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10071.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA272.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA458.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA11172.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA102.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10038.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA494.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10300.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10783.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10035.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA299.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10018.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA100.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10189.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA101.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA103.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA105.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA106.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA107.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA136.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UVA10082.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="UVA100in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA100out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10055in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10055out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10071in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10071out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA272out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA272in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA458in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA458out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA11172in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA11172out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA102in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA102out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10038in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10038out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA494in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA494out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10300out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10300in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10783in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10783out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10035in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10035out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA299in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA299out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10018in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10018out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10189in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10189out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA101in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA101out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA103in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA103out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA105in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA105out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA106in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA106out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA107in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA107out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10082in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA10082out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

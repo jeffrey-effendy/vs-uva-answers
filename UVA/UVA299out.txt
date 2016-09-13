@@ -1,0 +1,5 @@
+Optimal train swapping takes 2 swaps.
+Optimal train swapping takes 7 swaps.
+Optimal train swapping takes 12 swaps.
+Optimal train swapping takes 15 swaps.
+Optimal train swapping takes 30 swaps.
