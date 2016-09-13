@@ -1,10 +1,13 @@
-# UVA Answers
+# UVA Answers in Visual Studio
 
 ## Features
 
 - Answers to UVA, still ongoing
 - If the title is (WA), it means I believe the algorithm is correct but missing either the test cases or presentation error, so do not use for submission
-- Procided test cases and test code
+- Provided test cases and test code
+- Easy testing answers and finding difference, some details are hard to notice especially spaces, thus the test cases will save your points
+
+---
 
 ## How to use
 
@@ -19,6 +22,8 @@
 
 - Well, use any IDE or editor you like, just grab the files from UVA folder
 
+---
+
 ## On Submission
 
 - Pick any files, and remove these 4 lines:
@@ -30,3 +35,9 @@
         t -> begin(); // just after main(), to remove
         
         delete t; // at the end of file before return 0, to remove
+        
+---
+
+## Contact
+
+Suggestion to improve or question or bugs, email me at jeffreyeffendy.nma@gmail.com or create an issue will do
