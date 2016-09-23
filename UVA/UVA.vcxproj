@@ -229,7 +229,10 @@
     <ClCompile Include="UVA12279.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="UVA12289.cpp" />
+    <ClCompile Include="UVA12289.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="UVA12372.cpp" />
     <ClCompile Include="UVA136.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -304,6 +307,8 @@
     <Text Include="UVA12279out.txt" />
     <Text Include="UVA12289in.txt" />
     <Text Include="UVA12289out.txt" />
+    <Text Include="UVA12372in.txt" />
+    <Text Include="UVA12372out.txt" />
     <Text Include="UVA272in.txt" />
     <Text Include="UVA272out.txt" />
     <Text Include="UVA299in.txt" />
