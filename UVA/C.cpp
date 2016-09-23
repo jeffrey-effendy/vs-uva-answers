@@ -47,7 +47,7 @@ bool Test::compare()
 		getline(isA, lineA);
 		getline(isB, lineB);
 		bool curResult = lineA.compare(lineB) == 0;
-		res += lineA + "\n<===>\n" + lineB + "\n";
+		res += lineA + "\n(your output) <===> (test output)\n" + lineB + "\n";
 		res += curResult ? "[TRUE]\n\n" : "[FALSE]\n\n";
 		result &= curResult;
 	}
