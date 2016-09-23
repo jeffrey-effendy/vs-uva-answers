@@ -298,10 +298,13 @@
     <ClCompile Include="UVA494.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="UVA573.cpp" />
+    <ClCompile Include="UVA573.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="UVA621.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="UVA661.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C.h" />
@@ -407,6 +410,8 @@
     <Text Include="UVA573out.txt" />
     <Text Include="UVA621in.txt" />
     <Text Include="UVA621out.txt" />
+    <Text Include="UVA661in.txt" />
+    <Text Include="UVA661out.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
