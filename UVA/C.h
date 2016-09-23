@@ -14,6 +14,7 @@ private:
 	std::ofstream out;
 	std::streambuf *defIn, *defOut;
 	std::string inS, outS, outUVA, l;
+	bool outputTrue;
 	time_t timeStart;
 
 	Test() {}
@@ -24,6 +25,8 @@ public:
 	bool Test::compare();
 	void Test::begin();
 	void Test::log(std::string str);
+	void Test::showTrue();
+	void Test::hideTrue();
 };
 
 #endif

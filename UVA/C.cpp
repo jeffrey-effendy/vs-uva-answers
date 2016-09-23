@@ -4,6 +4,7 @@ using namespace std;
 
 Test::Test(string title)
 {
+	outputTrue = true;
 	l = "";
 	inS = title + "in.txt";
 	outS = "out.txt";
@@ -40,13 +41,20 @@ bool Test::compare()
 	ifstream isA(outS);
 	ifstream isB(outUVA);
 	bool result = true;
+	int line = 0;
 	string res = "";
 	cout << "Results: " << endl;
 	while (!isA.eof() && !isB.eof())
 	{
+		line++;
 		getline(isA, lineA);
 		getline(isB, lineB);
 		bool curResult = lineA.compare(lineB) == 0;
+		if (curResult && !outputTrue)
+		{
+			continue;
+		}
+		res += "line " + to_string(line) + ":\n";
 		res += lineA + "\n(your output) <===> (test output)\n" + lineB + "\n";
 		res += curResult ? "[TRUE]\n\n" : "[FALSE]\n\n";
 		result &= curResult;
@@ -74,4 +82,14 @@ void Test::log(string str)
 {
 	l += str;
 	l += "\n";
+}
+
+void Test::showTrue()
+{
+	outputTrue = true;
+}
+
+void Test::hideTrue()
+{
+	outputTrue = false;
 }
