@@ -10,6 +10,8 @@ class Box
 public:
 	vector<int> attrs;
 	int id;
+	int nparent;
+	int parent;
 
 	Box() {}
 
@@ -18,6 +20,8 @@ public:
 		this->id = id;
 		this->attrs = attrs;
 		sort(this->attrs.begin(), this->attrs.end());
+		nparent = 0;
+		parent = -1;
 	}
 
 	bool fitInto(const Box& other)
@@ -32,24 +36,24 @@ public:
 		}
 		return true;
 	}
-};
 
-bool boxCompare(const Box& boxA, const Box& boxB)
-{
-	int size = boxA.attrs.size() < boxB.attrs.size() ? boxA.attrs.size() : boxB.attrs.size();
-	for (int i = 0; i < size; i++)
+	bool lessThan(const Box& other)
 	{
-		if (boxA.attrs[i] < boxB.attrs[i])
+		int size = this->attrs.size() < other.attrs.size() ? this->attrs.size() : other.attrs.size();
+		for (int i = 0; i < size; i++)
 		{
-			return true;
+			if (this->attrs[i] > other.attrs[i])
+			{
+				return false;
+			}
+			if (this->attrs[i] < other.attrs[i])
+			{
+				return true;
+			}
 		}
-		else if (boxA.attrs[i] > boxB.attrs[i])
-		{
-			return false;
-		}
+		return true;
 	}
-	return false;
-}
+};
 
 int main()
 {
@@ -67,38 +71,49 @@ int main()
 				cin >> a;
 				attrs.push_back(a);
 			}
-			box[i].insert(attrs, i);
+			box[i].insert(attrs, i + 1);
 		}
-		sort(box.begin(), box.end(), boxCompare);
-		vector< vector<int> > L(30);
-		int max = 0;
-		L[0].push_back(0);
-		for (int i = 1; i < n; i++)
+		bool sorted = false;
+		while (!sorted)
 		{
-			for (int j = 0; j < i; j++)
+			sorted = true;
+			for (int i = 0; i < n -1; i++)
 			{
-				if (box[L[j][L[j].size() - 1]].fitInto(box[i]))
+				if (!box[i].lessThan(box[i + 1]))
 				{
-					if (L[i].size() < L[j].size())
-					{
-						L[i] = L[j];
-					}
+					Box temp = box[i];
+					box[i] = box[i + 1];
+					box[i + 1] = temp;
+					sorted = false;
 				}
 			}
-			L[i].push_back(i);
-			if (L[i].size() > L[max].size())
+		}
+		for (int i = n-1; i >= 0; i--)
+		{
+			for (int j = i + 1; j < n; j++)
 			{
-				max = i;
+				if (box[i].fitInto(box[j]) && box[i].nparent < box[j].nparent + 1)
+				{
+					box[i].nparent = box[j].nparent + 1;
+					box[i].parent = j;
+				}
 			}
 		}
-		cout << L[max].size() << endl;
-		for (int i = 0; i < L[max].size(); i++)
+		Box maxBox = box[0];
+		for (int i = 1; i < n; i++)
 		{
-			if (i != 0)
+			if (maxBox.nparent < box[i].nparent)
 			{
-				cout << " ";
+				maxBox = box[i];
 			}
-			cout << box[L[max][i]].id + 1;
+		}
+		int nbox = maxBox.nparent + 1;
+		cout << nbox << endl;
+		cout << maxBox.id;
+		for (int i = 0; i < nbox - 1; i++)
+		{
+			maxBox = box[maxBox.parent];
+			cout << " " << maxBox.id;
 		}
 		cout << endl;
 	}
