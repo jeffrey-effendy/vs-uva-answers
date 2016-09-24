@@ -198,6 +198,9 @@
     <ClCompile Include="UVA11586.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UVA11661.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C.h">
@@ -545,6 +548,12 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="UVA11586out.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA11661in.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="UVA11661out.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
