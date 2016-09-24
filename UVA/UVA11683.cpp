@@ -19,8 +19,7 @@ int main()
 			cin >> x;
 			int height = H - x;
 			res += max(0, height - prevHeight);
-			prevHeight = height;
-			
+			prevHeight = height;			
 		}
 		cout << res << endl;
 	}
