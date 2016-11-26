@@ -1,4 +1,4 @@
-# UVA Answers in Visual Studio
+# UVA Answers in Visual Studio (Discontinued)
 
 ## Features
 
@@ -37,7 +37,3 @@
         delete t; // at the end of file before return 0, to remove
         
 ---
-
-## Contact
-
-Suggestion to improve or question or bugs, email me at jeffreyeffendy.nma@gmail.com or create an issue will do
